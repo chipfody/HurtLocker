@@ -10,12 +10,6 @@ public class Main {
         return result;
     }
 
-    public static void main(String[] args) throws Exception {
-        String output = (new Main ()).readRawDataToString ();
-        System.out.println ( output );
-
-    }
-
     public class groceryList {
         private String name;
         private Double price;
@@ -59,6 +53,12 @@ public class Main {
             public void setExpirationDate (String expiration){
                 this.expirationDate = expiration;
             }
+
+    }
+
+    public static void main(String[] args) throws Exception {
+        String output = (new Main ()).readRawDataToString ();
+        System.out.println ( output );
 
     }
 }
